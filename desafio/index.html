@@ -15,6 +15,12 @@
                     },
                     fontFamily: {
                         titulo: ['Bonbon', 'cursive']
+                    },
+                    screens: {
+                        'sm': {'min': '320px', 'max': '459px'},
+                        'md': {'min': '460px', 'max': '619px'},
+                        'lg': {'min': '620px', 'max': '959px'},
+                        'xlg': {'min': '960px'},
                     }
                 }
             }
@@ -22,15 +28,15 @@
     </script>
 </head>
 <body>
-    <div class="flex">
-        <img class="h-44" src="https://img.freepik.com/free-photo/website-development-developer-working-program-codes-office-computer-program-programmer-workplace-programming-code-software-source-code_372999-389.jpg?w=1380" alt="codigo json">
-        <div class="p-10 flex flex-col w-2/5 bg-gradient-to-r from-pink-300 to-slate-400 justify-center h-44 gap-6">
-            <p class="text-6xl font-black text-primary font-titulo">Daissa</p>
-            <p class="text-4xl">Desenvolvedora Front-end</p>
+    <div class="flex sm:w-auto">
+        <img class="h-44 sm:w-auto w-scree " src="https://img.freepik.com/free-photo/website-development-developer-working-program-codes-office-computer-program-programmer-workplace-programming-code-software-source-code_372999-389.jpg?w=1380" alt="codigo json">
+        <div class="p-10 flex flex-col w-1/2 bg-gradient-to-r from-pink-300 to-slate-400 justify-center h-44  gap-6">
+            <p class="font-black text-primary font-titulo sm:text-lg md:text-2xl lg:text-4xl xlg:text-6xl">Daissa</p>
+            <p class="sm:text-base md:text-lg lg:text-2xl xlg:text-4xl">Desenvolvedora Front-end</p>
             <ul class="flex gap-3 mb-4">
-                <li><a class="hover:font-bold hover:text-primary" href="#">Linkedin</a></li>
-                <li><a class="hover:font-bold hover:text-primary" href="#">Email</a></li>
-                <li><a class="hover:font-bold hover:text-primary" href="#">GitHub</a></li>
+                <li><a class="hover:font-bold hover:text-primary sm:text-sm md:text-base lg:text-base xlg:text-lg" href="#">Linkedin</a></li>
+                <li><a class="hover:font-bold hover:text-primary sm:text-sm md:text-base lg:text-base xlg:text-lg" href="#">Email</a></li>
+                <li><a class="hover:font-bold hover:text-primary sm:text-sm md:text-base lg:text-base xlg:text-lg" href="#">GitHub</a></li>
             </ul>
         </div>
     </div>
